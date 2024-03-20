@@ -22,10 +22,10 @@ export default function Home() {
         // onChange={() => {}}
       />
       <div className="space-y-6">
-        <h2 className="text-xl font-semibold italic text-white">All songs</h2>
+        <h2 className="text-xl font-semibold text-white">All songs</h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {data?.map((song) => (
-            <MusicCard key={song.id} />
+            <MusicCard key={song.id} song={song} />
           ))}
         </div>
       </div>
