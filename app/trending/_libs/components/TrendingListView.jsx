@@ -1,10 +1,11 @@
 import MusicCard from "@/app/_libs/components/ui/MusicCard";
+import MusicCardError from "@/app/_libs/components/ui/MusicCardError";
 import MusicCardSkeleton from "@/app/_libs/components/ui/MusicCardSkeleton";
 import React from "react";
 
 export default function TrendingListView({ data, isLoading, isError }) {
   if (isLoading) return <MusicCardSkeleton />;
-  if (isError) return <h2 className="text-white">Error...</h2>;
+  if (isError) return <MusicCardError />;
 
   const trending = data.filter((song) => song.trending === true);
   return (
