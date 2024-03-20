@@ -29,7 +29,7 @@ export default function SearchByTextField({
       />
 
       {value.length > 0 ? (
-        <button onClick={onReset} className="absolute top-14 right-3">
+        <button onClick={onReset} className="absolute top-3 right-3">
           <XMarkIcon className="w-5 h-5 text-white" />
         </button>
       ) : (
