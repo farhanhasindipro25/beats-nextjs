@@ -34,7 +34,7 @@ export default function SearchByTextField({
         </button>
       ) : (
         <button className="absolute top-3 right-3">
-          <MagnifyingGlassIcon className="w-5 h-5 text-white" />
+          <MagnifyingGlassIcon className="w-5 h-5 text-white bg-black" />
         </button>
       )}
     </div>

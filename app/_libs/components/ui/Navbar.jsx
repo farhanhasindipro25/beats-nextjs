@@ -15,11 +15,11 @@ export default function Navbar() {
   return (
     <div className="bg-neutral-950 py-4">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
           <Link href="/" className="text-white font-semibold italic">
             BEATS
           </Link>
-          <div className="hidden gap-8 lg:flex">
+          <div className="gap-4 sm:gap-8 flex">
             {navOptions?.map((item) => (
               <Link
                 href={item.href}
