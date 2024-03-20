@@ -1,16 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { MusicalNoteIcon } from "@heroicons/react/20/solid";
 
 export default function MusicCard({ song }) {
   const {
-    album_name,
     band_name,
     song_name,
-    genre,
-    ratings,
-    trending,
-    recommended,
+
     song_cover,
   } = song;
   return (
@@ -20,6 +15,7 @@ export default function MusicCard({ song }) {
         alt={song_name}
         width={640}
         height={480}
+        priority
         className="rounded-md object-cover aspect-square"
       />
       <div>

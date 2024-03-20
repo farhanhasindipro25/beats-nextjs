@@ -36,6 +36,18 @@ export default function Home() {
       />
       <div className="space-y-6">
         <h2 className="text-xl font-semibold text-white">All songs</h2>
+        {searchKey && (
+          <h2 className="text-sm font-normal text-white">
+            Showing{" "}
+            <span className="font-semibold">{searchedData.length}</span>{" "}
+            {searchedData.length > 0
+              ? searchedData.length === 1
+                ? "result"
+                : "results"
+              : null}{" "}
+            for <span className="font-semibold italic">{searchKey}</span>.
+          </h2>
+        )}
         <MusicListView
           data={searchedData}
           isLoading={isLoading}
