@@ -23,8 +23,12 @@ export default function MusicCard({ song }) {
         className="rounded-md object-cover aspect-square"
       />
       <div>
-        <h2 className="text-white text-sm font-semibold">{song_name}</h2>
-        <h2 className="text-neutral-500 text-sm font-medium">{band_name}</h2>
+        <h2 className="text-white text-sm font-semibold truncate">
+          {song_name}
+        </h2>
+        <h2 className="text-neutral-500 text-sm truncate font-medium">
+          {band_name}
+        </h2>
       </div>
     </div>
   );
